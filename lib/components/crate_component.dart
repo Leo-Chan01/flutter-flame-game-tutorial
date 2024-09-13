@@ -8,7 +8,7 @@ class CrateComponent extends SpriteComponent {
   @override
   FutureOr<void> onLoad() async {
     sprite = await Sprite.load('crate.jpg',
-        srcPosition: Vector2.all(0), srcSize: Vector2.all(30));
+        srcPosition: Vector2(0, 0), srcSize: Vector2(30, 30));
     return super.onLoad();
   }
 }
